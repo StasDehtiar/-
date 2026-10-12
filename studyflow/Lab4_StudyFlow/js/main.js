@@ -72,7 +72,7 @@
   let fontSize = 16;
   document.addEventListener('keydown', event => {
     if (event.ctrlKey || event.altKey || event.metaKey || event.shiftKey) return;
-    if (event.target.closest('input,textarea,select,button,summary,[contenteditable="true"],[role="textbox"]')) return;
+    if (event.target.closest('input,textarea,select,[contenteditable="true"],[role="textbox"]')) return;
     if (!['ArrowUp','ArrowDown'].includes(event.key)) return;
     event.preventDefault();
     fontSize = Math.max(12, Math.min(24, fontSize + (event.key === 'ArrowUp' ? 1 : -1)));

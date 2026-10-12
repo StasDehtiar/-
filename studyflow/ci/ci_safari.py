@@ -4,6 +4,7 @@ from http.server import ThreadingHTTPServer,SimpleHTTPRequestHandler
 from functools import partial
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
@@ -27,6 +28,12 @@ try:
  assert len([e for e in driver.find_elements(By.CSS_SELECTOR,'.field-error') if e.text])==5
  driver.save_screenshot(str(out/'safari-lab4-form-errors.png'))
  checks.append({'test':'JavaScript form empty-field errors','passed':True})
+ driver.get('http://127.0.0.1:8000/Lab4_StudyFlow/index.html')
+ button=driver.find_element(By.ID,'theme-toggle');button.send_keys(Keys.ARROW_UP)
+ assert driver.execute_script('return document.documentElement.style.fontSize')=='17px'
+ button.send_keys(Keys.ARROW_DOWN)
+ assert driver.execute_script('return document.documentElement.style.fontSize')=='16px'
+ checks.append({'test':'font arrows while button focused','passed':True})
  (out/'safari-results.json').write_text(json.dumps({'browser':'Safari','capabilities':driver.capabilities,'tested_at':datetime.datetime.now(datetime.timezone.utc).isoformat(),'checks':checks},ensure_ascii=False,indent=2))
  print(f'Safari: {len(checks)} checks passed')
 finally:driver.quit();server.shutdown()
