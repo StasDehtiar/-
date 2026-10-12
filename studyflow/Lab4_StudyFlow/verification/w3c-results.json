@@ -1,0 +1,37 @@
+[
+  {
+    "version": "26.10.12",
+    "messages": [],
+    "file": "about.html",
+    "checked_at_utc": "2026-10-12T12:34:34.077662+00:00",
+    "validator": "https://validator.w3.org/nu/"
+  },
+  {
+    "version": "26.10.12",
+    "messages": [],
+    "file": "calendar.html",
+    "checked_at_utc": "2026-10-12T12:34:34.108766+00:00",
+    "validator": "https://validator.w3.org/nu/"
+  },
+  {
+    "version": "26.10.12",
+    "messages": [],
+    "file": "contacts.html",
+    "checked_at_utc": "2026-10-12T12:34:34.143587+00:00",
+    "validator": "https://validator.w3.org/nu/"
+  },
+  {
+    "version": "26.10.12",
+    "messages": [],
+    "file": "index.html",
+    "checked_at_utc": "2026-10-12T12:34:43.033401+00:00",
+    "validator": "https://validator.w3.org/nu/"
+  },
+  {
+    "version": "26.10.12",
+    "messages": [],
+    "file": "tasks.html",
+    "checked_at_utc": "2026-10-12T12:34:43.017970+00:00",
+    "validator": "https://validator.w3.org/nu/"
+  }
+]

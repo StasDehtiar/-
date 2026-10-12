@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="StudyFlow — планувальник навчальних завдань, дедлайнів і прогресу для студентів.">
+  <title>Завдання | StudyFlow</title>
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="./js/main.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Перейти до вмісту</a>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html"><img src="images/logo.svg" width="36" height="36" alt="Логотип StudyFlow"> <span>StudyFlow</span></a>
+    <nav class="desktop-nav" aria-label="Основна навігація"><ul><li><a href="index.html">Головна</a></li><li><a href="tasks.html" aria-current="page">Завдання</a></li><li><a href="calendar.html">Календар</a></li><li><a href="about.html">Про сервіс</a></li><li><a href="contacts.html">Контакти</a></li></ul></nav>
+    <details class="mobile-menu"><summary>Меню</summary><nav aria-label="Мобільна навігація"><ul><li><a href="index.html">Головна</a></li><li><a href="tasks.html" aria-current="page">Завдання</a></li><li><a href="calendar.html">Календар</a></li><li><a href="about.html">Про сервіс</a></li><li><a href="contacts.html">Контакти</a></li></ul></nav></details>
+    <button class="button button-quiet" type="button" id="theme-toggle" aria-pressed="false">Темна тема</button>
+  </div>
+</header>
+<main id="main" class="container"><section class="page-intro"><p class="eyebrow">Особистий план</p><h1>Навчальні завдання</h1><p>Створи власний список. Дані зберігаються на цьому пристрої.</p></section><div class="task-layout"><section class="panel"><h2>Нове завдання</h2><form id="task-form" action="tasks.html" method="get"><div class="field"><label for="task-title">Назва завдання</label><input id="task-title" name="title" type="text" required minlength="3" maxlength="120" aria-describedby="task-title-help task-title-error"><p class="field-help" id="task-title-help">Від 3 до 120 символів.</p><p class="field-error" id="task-title-error" aria-live="polite"></p></div><div class="field"><label for="task-subject">Предмет</label><input id="task-subject" name="subject" type="text" required minlength="2" maxlength="60" aria-describedby="task-subject-help task-subject-error"><p class="field-help" id="task-subject-help">Наприклад, Вебтехнології.</p><p class="field-error" id="task-subject-error" aria-live="polite"></p></div><div class="field"><label for="task-due">Дедлайн</label><input id="task-due" name="due" type="date" required aria-describedby="task-due-help task-due-error"><p class="field-help" id="task-due-help">Дата здачі роботи.</p><p class="field-error" id="task-due-error" aria-live="polite"></p></div><div class="field"><label for="task-priority">Пріоритет</label><select id="task-priority" name="priority" aria-describedby="task-priority-help task-priority-error"><option value="normal">Звичайний</option><option value="high">Високий</option></select><p class="field-help" id="task-priority-help">Високий пріоритет позначається окремо.</p><p class="field-error" id="task-priority-error" aria-live="polite"></p></div><button class="button" type="submit">Додати завдання</button><p id="task-result" role="status" aria-live="polite"></p></form></section><section class="panel"><h2>Мій список</h2><div class="filters"><div class="field"><label for="task-search">Пошук</label><input id="task-search" type="search" placeholder="Назва або предмет"></div><div class="field"><label for="task-filter">Статус</label><select id="task-filter"><option value="all">Усі завдання</option><option value="active">Активні</option><option value="done">Завершені</option></select></div></div><p id="task-stats" class="small" aria-live="polite">Демонстраційний список</p><ul class="task-list" id="task-list"><li class="task-item"><div><h3>Лабораторна робота 2</h3><p>Вебтехнології · 16 жовтня 2026</p></div><span class="badge">Активне</span></li><li class="task-item"><div><h3>Підготовка до контрольної</h3><p>Лінійна алгебра · 18 жовтня 2026</p></div><span class="badge">Активне</span></li></ul></section></div></main>
+<footer class="site-footer"><div class="container footer-inner"><p>StudyFlow · Навчання за планом</p><p>Навчальний проєкт · Дегтяр Станіслав</p><p><time id="current-date" datetime="2026-10-12">12 жовтня 2026 року</time></p></div></footer>
+</body>
+</html>
