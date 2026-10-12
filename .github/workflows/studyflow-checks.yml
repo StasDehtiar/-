@@ -1,0 +1,55 @@
+name: StudyFlow browser verification
+on:
+  push:
+    branches: [studyflow-labs]
+    paths: ['studyflow/**', '.github/workflows/studyflow-checks.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  browser:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    strategy:
+      fail-fast: false
+      matrix:
+        browser: [chrome, firefox, msedge]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install test dependencies
+        run: npm install --no-save playwright
+      - name: Install browser
+        run: npx playwright install --with-deps ${{ matrix.browser }}
+      - name: Verify all laboratory pages and interactions
+        run: node studyflow/ci/ci_playwright.cjs ${{ matrix.browser }}
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: studyflow-${{ matrix.browser }}
+          path: browser-artifacts/
+  safari:
+    runs-on: macos-15
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install Selenium
+        run: python -m pip install selenium
+      - name: Enable Safari WebDriver on disposable runner
+        run: sudo safaridriver --enable
+      - name: Verify native Safari
+        run: python studyflow/ci/ci_safari.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: studyflow-safari
+          path: browser-artifacts/
