@@ -1,0 +1,194 @@
+{
+  "browser": "Safari",
+  "capabilities": {
+    "safari:platformVersion": "15.7.9",
+    "safari:automaticInspection": false,
+    "webkit:WebRTC": {
+      "DisableICECandidateFiltering": false,
+      "DisableInsecureMediaCapture": false
+    },
+    "webkit:alwaysAllowAutoplay": false,
+    "browserVersion": "26.6.1",
+    "strictFileInteractability": false,
+    "browserName": "Safari",
+    "safari:useSimulator": false,
+    "safari:platformBuildVersion": "24G830",
+    "setWindowRect": true,
+    "acceptInsecureCerts": false,
+    "safari:automaticProfiling": false,
+    "pageLoadStrategy": "normal",
+    "safari:experimentalWebSocketUrl": false,
+    "platformName": "macOS",
+    "safari:diagnose": false
+  },
+  "tested_at": "2026-10-12T17:03:11.964097+00:00",
+  "checks": [
+    {
+      "lab": 2,
+      "page": "index",
+      "requested_width": 1440,
+      "viewport": {
+        "width": 1440,
+        "height": 948,
+        "overflow": false
+      },
+      "passed": true
+    },
+    {
+      "lab": 2,
+      "page": "tasks",
+      "requested_width": 1440,
+      "viewport": {
+        "width": 1440,
+        "height": 948,
+        "overflow": false
+      },
+      "passed": true
+    },
+    {
+      "lab": 2,
+      "page": "calendar",
+      "requested_width": 1440,
+      "viewport": {
+        "width": 1440,
+        "height": 948,
+        "overflow": false
+      },
+      "passed": true
+    },
+    {
+      "lab": 2,
+      "page": "about",
+      "requested_width": 1440,
+      "viewport": {
+        "width": 1440,
+        "height": 948,
+        "overflow": false
+      },
+      "passed": true
+    },
+    {
+      "lab": 2,
+      "page": "contacts",
+      "requested_width": 1440,
+      "viewport": {
+        "width": 1440,
+        "height": 948,
+        "overflow": false
+      },
+      "passed": true
+    },
+    {
+      "lab": 2,
+      "page": "index",
+      "requested_width": 768,
+      "viewport": {
+        "width": 768,
+        "height": 948,
+        "overflow": false
+      },
+      "passed": true
+    },
+    {
+      "lab": 2,
+      "page": "tasks",
+      "requested_width": 768,
+      "viewport": {
+        "width": 768,
+        "height": 948,
+        "overflow": false
+      },
+      "passed": true
+    },
+    {
+      "lab": 2,
+      "page": "calendar",
+      "requested_width": 768,
+      "viewport": {
+        "width": 768,
+        "height": 948,
+        "overflow": false
+      },
+      "passed": true
+    },
+    {
+      "lab": 2,
+      "page": "about",
+      "requested_width": 768,
+      "viewport": {
+        "width": 768,
+        "height": 948,
+        "overflow": false
+      },
+      "passed": true
+    },
+    {
+      "lab": 2,
+      "page": "contacts",
+      "requested_width": 768,
+      "viewport": {
+        "width": 768,
+        "height": 948,
+        "overflow": false
+      },
+      "passed": true
+    },
+    {
+      "lab": 2,
+      "page": "index",
+      "requested_width": 390,
+      "viewport": {
+        "width": 390,
+        "height": 948,
+        "overflow": true
+      },
+      "passed": true
+    },
+    {
+      "lab": 2,
+      "page": "tasks",
+      "requested_width": 390,
+      "viewport": {
+        "width": 390,
+        "height": 948,
+        "overflow": false
+      },
+      "passed": true
+    },
+    {
+      "lab": 2,
+      "page": "calendar",
+      "requested_width": 390,
+      "viewport": {
+        "width": 390,
+        "height": 948,
+        "overflow": false
+      },
+      "passed": true
+    },
+    {
+      "lab": 2,
+      "page": "about",
+      "requested_width": 390,
+      "viewport": {
+        "width": 390,
+        "height": 948,
+        "overflow": false
+      },
+      "passed": true
+    },
+    {
+      "lab": 2,
+      "page": "contacts",
+      "requested_width": 390,
+      "viewport": {
+        "width": 390,
+        "height": 948,
+        "overflow": false
+      },
+      "passed": true
+    }
+  ],
+  "workflow_run": "https://github.com/StasDehtiar/-/actions/runs/38281531195",
+  "source_commit": "b25fdf6290445cd76f34de34a8ab17dd4acf49a1"
+}

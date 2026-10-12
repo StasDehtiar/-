@@ -1,0 +1,151 @@
+{
+  "browser": "chrome",
+  "version": "155.0.8059.39",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+  "tested_at": "2026-10-12T17:03:24.250Z",
+  "checks": [
+    {
+      "lab": 2,
+      "file": "index",
+      "width": 1440,
+      "overflow": false,
+      "passed": true
+    },
+    {
+      "lab": 2,
+      "file": "tasks",
+      "width": 1440,
+      "overflow": false,
+      "passed": true
+    },
+    {
+      "lab": 2,
+      "file": "calendar",
+      "width": 1440,
+      "overflow": false,
+      "passed": true
+    },
+    {
+      "lab": 2,
+      "file": "about",
+      "width": 1440,
+      "overflow": false,
+      "passed": true
+    },
+    {
+      "lab": 2,
+      "file": "contacts",
+      "width": 1440,
+      "overflow": false,
+      "passed": true
+    },
+    {
+      "lab": 2,
+      "file": "index",
+      "width": 768,
+      "overflow": false,
+      "passed": true
+    },
+    {
+      "lab": 2,
+      "file": "tasks",
+      "width": 768,
+      "overflow": false,
+      "passed": true
+    },
+    {
+      "lab": 2,
+      "file": "calendar",
+      "width": 768,
+      "overflow": false,
+      "passed": true
+    },
+    {
+      "lab": 2,
+      "file": "about",
+      "width": 768,
+      "overflow": false,
+      "passed": true
+    },
+    {
+      "lab": 2,
+      "file": "contacts",
+      "width": 768,
+      "overflow": false,
+      "passed": true
+    },
+    {
+      "lab": 2,
+      "file": "index",
+      "width": 390,
+      "overflow": true,
+      "passed": true
+    },
+    {
+      "lab": 2,
+      "file": "tasks",
+      "width": 390,
+      "overflow": false,
+      "passed": true
+    },
+    {
+      "lab": 2,
+      "file": "calendar",
+      "width": 390,
+      "overflow": false,
+      "passed": true
+    },
+    {
+      "lab": 2,
+      "file": "about",
+      "width": 390,
+      "overflow": false,
+      "passed": true
+    },
+    {
+      "lab": 2,
+      "file": "contacts",
+      "width": 390,
+      "overflow": false,
+      "passed": true
+    },
+    {
+      "lab": 2,
+      "file": "index",
+      "width": 320,
+      "overflow": true,
+      "passed": true
+    },
+    {
+      "lab": 2,
+      "file": "tasks",
+      "width": 320,
+      "overflow": false,
+      "passed": true
+    },
+    {
+      "lab": 2,
+      "file": "calendar",
+      "width": 320,
+      "overflow": false,
+      "passed": true
+    },
+    {
+      "lab": 2,
+      "file": "about",
+      "width": 320,
+      "overflow": false,
+      "passed": true
+    },
+    {
+      "lab": 2,
+      "file": "contacts",
+      "width": 320,
+      "overflow": false,
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "workflow_run": "https://github.com/StasDehtiar/-/actions/runs/38281531195",
+  "source_commit": "b25fdf6290445cd76f34de34a8ab17dd4acf49a1"
+}

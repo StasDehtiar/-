@@ -1,0 +1,30 @@
+{
+  "workflow_run": "https://github.com/StasDehtiar/-/actions/runs/38281531195",
+  "source_commit": "b25fdf6290445cd76f34de34a8ab17dd4acf49a1",
+  "browsers": [
+    {
+      "browser": "chrome",
+      "version": "155.0.8059.39",
+      "checks": 20,
+      "passed": true
+    },
+    {
+      "browser": "firefox",
+      "version": "157.0",
+      "checks": 20,
+      "passed": true
+    },
+    {
+      "browser": "msedge",
+      "version": "155.0.4283.45",
+      "checks": 20,
+      "passed": true
+    },
+    {
+      "browser": "Safari",
+      "version": "26.6.1",
+      "checks": 15,
+      "passed": true
+    }
+  ]
+}

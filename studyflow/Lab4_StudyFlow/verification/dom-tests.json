@@ -1,6 +1,6 @@
 {
   "environment": "Node.js + jsdom (DOM simulation; not browser layout)",
-  "tested_at": "2026-10-12T13:07:20.803Z",
+  "tested_at": "2026-10-12T15:29:16.804Z",
   "checks": [
     {
       "name": "Порожня форма дає п’ять окремих помилок",
@@ -36,6 +36,10 @@
     },
     {
       "name": "ArrowUp і ArrowDown змінюють розмір тексту",
+      "passed": true
+    },
+    {
+      "name": "Стрілки працюють після натискання кнопки",
       "passed": true
     },
     {
